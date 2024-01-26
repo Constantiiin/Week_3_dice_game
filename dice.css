@@ -1,0 +1,60 @@
+body {
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    background: linear-gradient(180deg, black, grey, red, darkred 100%);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  .game-container {
+    max-width: 600px;
+    width: 90%;
+    padding: 30px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .player {
+    margin-bottom: 30px;
+    padding: 10px;
+    background: linear-gradient(900deg, antiquewhite, white, grey 100%);
+    border-radius: 5px;
+    color: black;
+  }
+  
+  .player.active {
+    background-color: #3a3a3a;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  #dice-face {
+    font-size: 5rem;
+    margin: 20px 0;
+    color: red;
+  }
+  
+  @media (max-width: 600px) {
+    .game-container {
+      width: 90%;
+    }
+  }
